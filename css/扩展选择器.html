@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展选择器</title>
+    <style>
+        div p{
+            color: red;
+        }
+
+        div > p{
+            border: 1px solid;
+        }
+
+        input[type="text"]{
+            border: 5px groove;
+            color: yellow;
+        }
+
+        a:link{
+            color: deeppink;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color: green;
+        }
+        a:visited{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>hahaha</p>
+</div>
+<p>lalala</p>
+<div>huhuhu</div>
+
+<input type="text">
+<input type="email">
+<br>
+<a href="">baidu</a>
+</body>
+</html>

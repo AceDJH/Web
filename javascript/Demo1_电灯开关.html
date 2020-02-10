@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电灯开关</title>
+</head>
+<body>
+<img id="light" src="img/off.gif" alt="">
+<h1 id="text">电灯暗啦</h1>
+<script>
+    var light = document.getElementById("light");
+    var text = document.getElementById("text");
+    var flag = false;
+    light.onclick = function () {
+        if (flag === false){
+            light.src = "img/on.gif";
+            flag = true;
+            text.innerHTML = "电灯亮啦";
+        }else{
+            light.src = "img/off.gif";
+            flag = false;
+            text.innerHTML = "电灯暗啦";
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码</title>
+    <script>
+        /*点击超链接或图片进行换图*/
+        window.onload = function () {
+            var img = document.getElementById("checkCode");
+            img.onclick = function () {
+                img.src = "/tomcat_war_exploded/checkCodeServlet?" + new Date().getTime();
+            }
+        }
+    </script>
+</head>
+<body>
+<img id="checkCode" src="/tomcat_war_exploded/checkCodeServlet" alt="">
+<!--chrome自己添加了超链接的更改，因此我自己不手写了-->
+<a id="change" href="">换一张</a>
+</body>
+</html>

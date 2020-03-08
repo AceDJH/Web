@@ -26,12 +26,12 @@
 <body>
 <div style="text-align: center">
   <h1>
-    ${user.name}, 欢迎您
+    欢迎您
   </h1>
 </div>
 <div align="center">
   <a
-          href="${pageContext.request.contextPath}/userListServlet" style="text-decoration:none;font-size:33px">查询所有用户信息
+          href="${pageContext.request.contextPath}/findUserByPageServlet" style="text-decoration:none;font-size:33px">查询所有用户信息
   </a>
 </div>
 </body>

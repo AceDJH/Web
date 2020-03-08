@@ -12,4 +12,17 @@ import java.util.List;
 public interface UserDao {
     public List<User> findAll();
     public User findUserByUsernameAndPassword(String username, String password);
+
+    void add(User user);
+
+    void delete(int id);
+
+
+    User findById(int id);
+
+    void update(User user);
+
+    int findTotalCount();
+
+    List<User> findByPage(int start, int rows);
 }
